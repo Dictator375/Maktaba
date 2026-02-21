@@ -9,7 +9,6 @@ import com.ElOuedUniv.maktaba.data.repository.BookRepository
 import com.ElOuedUniv.maktaba.presentation.screens.BookListScreen
 import com.ElOuedUniv.maktaba.presentation.theme.MaktabaTheme
 import com.ElOuedUniv.maktaba.presentation.viewmodel.BookViewModel
-import com.ElOuedUniv.maktaba.presentation.viewmodel.BookViewModelFactory
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
