@@ -6,7 +6,7 @@ import com.ElOuedUniv.maktaba.data.model.Book
  * Repository for managing book data
  * This follows the Repository pattern to abstract data sources
  */
-class BookRepository {
+open class BookRepository {
 
     /**
      * TODO for Students (TP1 - Exercise 1):
@@ -55,7 +55,7 @@ class BookRepository {
      * Get all books from the repository
      * @return List of all books
      */
-    fun getAllBooks(): List<Book> {
+    open fun getAllBooks(): List<Book> {
         return booksList
     }
 
@@ -64,7 +64,7 @@ class BookRepository {
      * @param isbn The ISBN of the book to find
      * @return The book if found, null otherwise
      */
-    fun   getBookByIsbn(isbn: String): Book? {
+    open fun   getBookByIsbn(isbn: String): Book? {
         return booksList.find { it.isbn == isbn }
     }
 }
